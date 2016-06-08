@@ -24,9 +24,9 @@
 
 
 
-@interface WebSaverView : ScreenSaverView 
+@interface WebSaverView : ScreenSaverView <WebFrameLoadDelegate>
 {
-    WKWebView *webView;
+    WebView *webView;
 	NSDate *lastLoad;
 	
 	// Motion Sensor Related
